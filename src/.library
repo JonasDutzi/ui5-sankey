@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd">
+	<name>com.sankey</name>
+	<vendor>Jonas Dutzi</vendor>
+	<version>${version}</version>
+	<copyright>${copyright}</copyright>
+	<title>com.sankey</title>
+	<documentation>Some description about com.sankey</documentation>
+	<dependencies>
+		<dependency>
+			<libraryName>sap.ui.core</libraryName>
+			<libraryName>sap.m</libraryName>
+		</dependency>
+	</dependencies>
+</library>

@@ -1,0 +1,21 @@
+specVersion: "4.0"
+metadata:
+  name: com.sankey
+type: library
+framework:
+  name: SAPUI5
+  version: 1.130.2
+  libraries:
+    - name: sap.ui.core
+    - name: sap.m
+    - name: themelib_sap_fiori_3
+    - name: themelib_sap_horizon
+builder:
+  resources:
+    excludes:
+      - "/test-resources/**"
+  customTasks:
+    - name: ui5-tooling-transpile-task
+      afterTask: replaceVersion
+      configuration:
+        generateTsInterfaces: true
