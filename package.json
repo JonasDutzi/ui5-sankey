@@ -23,6 +23,7 @@
 		"start:dist": "npm start -- --config ui5-dist.yaml",
 		"testsuite": "ui5 serve -o test-resources/com/sankey/qunit/testsuite.qunit.html",
 		"ts-typecheck": "tsc --noEmit",
+		"semantic-release": "semantic-release",
 		"lint": "oxlint",
 		"format": "prettier --write .",
 		"format:check": "prettier --check ."
@@ -45,6 +46,7 @@
 		"oxlint": "^0.15.0",
 		"prettier": "^3.3.3",
 		"rimraf": "^6.0.1",
+		"semantic-release": "^24.2.6",
 		"typescript": "^5.5.4",
 		"ui5-tooling-modules": "^3.28.1",
 		"ui5-tooling-transpile": "^3.5.1"
