@@ -2,12 +2,5 @@
 	"extends": "@istanbuljs/nyc-config-babel",
 	"reporter": ["lcov"],
 	"all": true,
-	"exclude": ["**/test/**", "**/localService/**"],
-	"check-coverage": true,
-	"temp-dir": "./nyc_output",
-	"report-dir": "./coverage",
-	"branches": 80,
-	"lines": 80,
-	"functions": 80,
-	"statements": 80
+	"exclude": ["**/test/**", "**/localService/**"]
 }

@@ -25,7 +25,8 @@
 		"format:check": "prettier --check .",
 		"pretest": "npm run clean",
 		"test": "playwright test",
-		"clean": "rimraf dist nyc_output",
+		"test:coverage": "npm run test && npx nyc report --reporter=lcov --report-dir=./coverage/playwright-coverage",
+		"clean": "rimraf dist coverage",
 		"semantic-release": "semantic-release"
 	},
 	"devDependencies": {
