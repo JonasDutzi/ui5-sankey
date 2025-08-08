@@ -1,0 +1,21 @@
+name: Release Precheck
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  semantic-release-dry-run:
+    name: Semantic Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+      - name: Install dependencies
+        run: npm ci
+      - name: Run semantic-release in dry-run mode
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run semantic-release --dry-run

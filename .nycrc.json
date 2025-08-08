@@ -1,0 +1,6 @@
+{
+	"extends": "@istanbuljs/nyc-config-babel",
+	"reporter": ["lcov"],
+	"all": true,
+	"exclude": ["**/test/**", "**/localService/**"]
+}
