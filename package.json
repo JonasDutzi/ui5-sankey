@@ -17,7 +17,7 @@
 		"dev": "ui5 serve --port 8080  --config ui5-test.yaml",
 		"test": "playwright test",
 		"posttest": "npx nyc merge ./.nyc_output ./.nyc_output/coverage-final.json && npx nyc report --reporter=lcov --report-dir=./coverage",
-		"build": "ui5 build --clean-dest --config ui5-build.yaml",
+		"build": "npx ui5 build --clean-dest --config ui5-build.yaml",
 		"build:ts-interfaces": "npx @ui5/ts-interface-generator",
 		"start": "ui5 serve -o test-resources/com/sankey/Example.html",
 		"start:dist": "npm start -- --config ui5-dist.yaml",
