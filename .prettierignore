@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+coverage/
+.nyc_output/
+
+# Logs
+*.log
+
+# UI5 build artifacts
+tmp/
+.ui5/
+
+# Generated files
+*.gen.d.ts
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# IDE files
+.vscode/
+.idea/

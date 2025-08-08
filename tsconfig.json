@@ -1,21 +1,21 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "es2022",
-    "moduleResolution": "node",
-    "skipLibCheck": true,
-    "allowJs": true,
-    "strict": true,
-    "strictNullChecks": false,
-    "strictPropertyInitialization": false,
-    "rootDir": "./",
-    "types": ["@sapui5/types", "@types/jquery", "@types/qunit", "@types/node"],
-    "paths": {
-      "com/sankey/*": ["./src/*"]
-    }
-  },
-  "ts-node": {
-    "files": true
-  },
-  "include": ["./src/**/*", "./test/**/*", "./playwright.config.ts"]
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "es2022",
+		"moduleResolution": "node",
+		"skipLibCheck": true,
+		"allowJs": true,
+		"strict": true,
+		"strictNullChecks": false,
+		"strictPropertyInitialization": false,
+		"rootDir": "./",
+		"types": ["@sapui5/types", "@types/jquery", "@types/qunit", "@types/node"],
+		"paths": {
+			"com/sankey/*": ["./src/*"]
+		}
+	},
+	"ts-node": {
+		"files": true
+	},
+	"include": ["./src/**/*", "./test/**/*", "./playwright.config.ts"]
 }

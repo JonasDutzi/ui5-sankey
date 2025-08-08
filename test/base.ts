@@ -10,37 +10,24 @@ export function generateUUID(): string {
 }
 
 export const test = baseTest.extend({
-	context: async (
-		{ context },
-		use: (context: BrowserContext) => Promise<void>,
-	): Promise<void> => {
+	context: async ({ context }, use: (context: BrowserContext) => Promise<void>): Promise<void> => {
 		await context.addInitScript(() =>
 			window.addEventListener("beforeunload", () =>
-				(window as any).collectIstanbulCoverage(
-					JSON.stringify((window as any).__coverage__),
-				),
-			),
+				(window as any).collectIstanbulCoverage(JSON.stringify((window as any).__coverage__))
+			)
 		);
 		await fs.promises.mkdir(istanbulCLIOutput, { recursive: true });
-		await context.exposeFunction(
-			"collectIstanbulCoverage",
-			(coverageJSON: string) => {
-				if (coverageJSON)
-					fs.writeFileSync(
-						path.join(
-							istanbulCLIOutput,
-							`playwright_coverage_${generateUUID()}.json`,
-						),
-						coverageJSON,
-					);
-			},
-		);
+		await context.exposeFunction("collectIstanbulCoverage", (coverageJSON: string) => {
+			if (coverageJSON)
+				fs.writeFileSync(
+					path.join(istanbulCLIOutput, `playwright_coverage_${generateUUID()}.json`),
+					coverageJSON
+				);
+		});
 		await use(context);
 		for (const page of context.pages()) {
 			await page.evaluate(() =>
-				(window as any).collectIstanbulCoverage(
-					JSON.stringify((window as any).__coverage__),
-				),
+				(window as any).collectIstanbulCoverage(JSON.stringify((window as any).__coverage__))
 			);
 		}
 	},
