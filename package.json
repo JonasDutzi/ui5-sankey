@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"types": "dist/index.d.ts",
 	"files": [
-		"LICENCE",
+		"LICENSE",
 		"README.md",
 		"tsconfig.json",
 		"ui5.yaml",
