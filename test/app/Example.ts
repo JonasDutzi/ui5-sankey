@@ -4,7 +4,6 @@ import Sankey from "com/sankey/Sankey";
 import { sankeyData } from "./data";
 import ColumnContent from "com/sankey/ColumnContent";
 import Anchor from "com/sankey/Anchor";
-import Item from "com/sankey/Item";
 import Fragment from "sap/ui/core/Fragment";
 import Element from "sap/ui/core/Element";
 import SankeyChart from "com/sankey/SankeyChart";
