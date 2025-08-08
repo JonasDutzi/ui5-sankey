@@ -21,9 +21,9 @@ jobs:
       - name: Run Build
         run: npm run build
       - name: Run Lint
-        run: pnpm run lint
+        run: npm run lint
       - name: Run Format Check
-        run: pnpm run format:check
+        run: npm run format:check
   unit-tests:
     name: Unit Tests
     runs-on: ubuntu-22.04
