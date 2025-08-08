@@ -1,5 +1,5 @@
 {
-	"name": "@sap/ui5-sankey",
+	"name": "ui5-sankey",
 	"version": "0.0.0-development",
 	"description": "UI5 library for sankey diagrams",
 	"author": "Jonas Dutzi",
