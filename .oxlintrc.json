@@ -1,0 +1,17 @@
+{
+	"rules": {
+		"typescript": "warn",
+		"correctness": "warn",
+		"suspicious": "warn",
+		"perf": "warn"
+	},
+	"env": {
+		"browser": true,
+		"node": true,
+		"es2022": true
+	},
+	"globals": {
+		"sap": "readonly"
+	},
+	"ignore_patterns": ["node_modules/**", "dist/**", "coverage/**", ".nyc_output/**", "*.gen.d.ts"]
+}

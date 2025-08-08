@@ -5,7 +5,6 @@ Svelte-sankey is a library built with Svelte to create customizable sankey diagr
 
 ![alt text](image.png)
 
-
 ## Preparation
 
 Use `npm` (or `yarn`) to install the dependencies:
