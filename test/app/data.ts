@@ -91,7 +91,7 @@ export const sankeyData = {
 							data: {
 								totalValue: 16,
 							},
-							anchorColor: "var(--anchor-color-4)",
+							anchorColor: "var(--sapBrandColor)",
 						},
 					],
 				},

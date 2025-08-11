@@ -53,6 +53,6 @@
 		"ui5-tooling-transpile": "^3.5.1"
 	},
 	"dependencies": {
-		"svelte-sankey": "^1.8.4"
+		"svelte-sankey": "^2.0.4"
 	}
 }
