@@ -16,6 +16,10 @@ jobs:
         uses: actions/setup-node@v4
       - name: Install dependencies
         run: npm ci
+      - name: Build TypeScript interfaces
+        run: npm run build:ts-interfaces
+      - name: Build library
+        run: npm run build
       - name: Run semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
