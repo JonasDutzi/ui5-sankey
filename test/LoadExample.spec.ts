@@ -9,5 +9,5 @@ test("should render all relevant parts of the sankey", async ({ page }) => {
 	await expect(page.getByRole("button", { name: "Finished Product 1" })).toBeVisible();
 	await expect(page.getByRole("button", { name: "Finished Product 2" })).toBeVisible();
 
-	await expect(await page.locator("#chart path.sv-sankey__path").count()).toBe(5);
+	await expect(await page.locator("path.sv-sankey__path").count()).toBe(5);
 });
