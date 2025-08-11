@@ -2,6 +2,10 @@
 	"name": "ui5-sankey",
 	"version": "0.0.0-development",
 	"description": "UI5 library for sankey diagrams",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JonasDutzi/ui5-sankey.git"
+	},
 	"author": "Jonas Dutzi",
 	"license": "MIT",
 	"types": "dist/index.d.ts",
