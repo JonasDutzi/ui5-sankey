@@ -23,9 +23,6 @@ import ColumnHeader from "com/sankey/ColumnHeader";
 	const columns = [];
 	const headers = [];
 	for (const data of sankeyData.data) {
-		// const header = new ColumnHeader();
-		// columns.push(header as Control);
-
 		const columnContent = new ColumnContent({
 			data: data,
 			content: [new Title({ text: data.columnLabel })],
