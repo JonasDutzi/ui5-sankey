@@ -53,7 +53,7 @@
 		"rimraf": "^6.0.1",
 		"semantic-release": "^24.2.6",
 		"typescript": "^5.5.4",
-		"ui5-tooling-modules": "^3.28.1",
+		"ui5-tooling-modules": "^3.30.2",
 		"ui5-tooling-transpile": "^3.5.1"
 	},
 	"dependencies": {
